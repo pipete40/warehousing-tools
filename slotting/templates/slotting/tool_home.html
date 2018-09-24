@@ -53,9 +53,16 @@
                 </form>
             </div>
 
-            <div id="wait" style="display: none">
-                <img src="/static/images/copper.gif" width="300" height="200" />
+            <div id="wait" style="opacity: 0">
+                <div
+                        data-type="fill"
+                        data-img="/static/images/atom.svg"
+                        class="ldBar label-center"
+                        data-value="35"
+                        data-img-size="200,200"
+                ></div>
             </div>
+
 
             <p> {{ test_info }}</p>
         </div>
@@ -67,7 +74,7 @@
 
     {% if submitted %}
 
-        
+
             <section>
                 <div style="width: 95%;  display: block; margin-left: auto; margin-right: auto;" >
                     <h3> Results </h3>
@@ -144,7 +151,7 @@
 
             $myForm.submit( function(event){
                 var x = $("#fainter").position();
-                $('#wait').show();
+                $('#wait').css("opacity", 1);
                 $('#wait').css("top", x.top);
                 $('#wait').css("left", x.left);
 

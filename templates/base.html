@@ -18,6 +18,7 @@
         <script src="https://cdn.pydata.org/bokeh/release/bokeh-widgets-0.13.0.min.js"></script>
         <script type="text/javascript" async
             src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
+        <link rel="stylesheet" href= "{% static 'assets/css/loading-bar.css' %}" />
 	    {% block head_script %}  {% endblock%}
     </head>
 	<body>
@@ -102,7 +103,7 @@
 			<script src= "{% static 'assets/js/skel.min.js' %}"> </script>
 			<script src= "{% static 'assets/js/util.js' %}"> </script>
 			<script src= "{% static 'assets/js/main.js' %}"> </script>
-
+            <script src= "{% static 'assets/js/loading-bar.js' %}"> </script>
     {% block page_script %}  {% endblock%}
 
 	</body>
